@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atena Salehi | Exploring the Depths of My Soul Through Color</title>
+<style>
+:root{color-scheme:light dark;--bg:#f4efe7;--fg:#17120f;--mut:#6d655d;--ln:#ddd4c8;--ac:#e8431f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d0b0a;--fg:#f3ede4;--mut:#9a9088;--ln:#26211e}}
+:root[data-theme="dark"]{--bg:#0d0b0a;--fg:#f3ede4;--mut:#9a9088;--ln:#26211e}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 Georgia,"Times New Roman",serif;overflow-x:hidden;cursor:none}
+a,button{color:inherit;text-decoration:none;cursor:none;font:inherit;background:none;border:0}
+@media(hover:none){body,a,button{cursor:auto}.ring,.dot{display:none}}
+.ring{position:fixed;top:0;left:0;z-index:99;pointer-events:none}
+.ring b{position:absolute;width:30px;height:30px;margin:-15px;border-radius:50%;background:#fff;mix-blend-mode:difference;display:grid;place-items:center;font:700 10px/1 monospace;letter-spacing:.15em;color:#000;transition:width .4s cubic-bezier(.2,.8,.2,1),height .4s cubic-bezier(.2,.8,.2,1),margin .4s cubic-bezier(.2,.8,.2,1),transform .2s}
+.ring.on b{width:92px;height:92px;margin:-46px}.ring.dn b{transform:scale(.8)}
+.dot{position:fixed;top:0;left:0;width:5px;height:5px;margin:-2.5px;border-radius:50%;background:#fff;mix-blend-mode:difference;z-index:100;pointer-events:none}
+.pre{position:fixed;inset:0;z-index:200;display:grid;place-items:center;pointer-events:none}
+.pre i{position:absolute;inset:0;background:var(--c);transition:transform .9s cubic-bezier(.8,0,.2,1) var(--d)}
+.pre span{position:relative;font:italic 40px Georgia;color:#fff;letter-spacing:.05em;transition:opacity .4s}
+.pre.go i{transform:translateY(-100%)}.pre.go span{opacity:0}
+.prog{position:fixed;top:0;left:0;height:3px;background:var(--ac);width:0;z-index:60}
+nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:40;display:flex;justify-content:space-between;align-items:center;padding:20px 5vw;mix-blend-mode:difference;color:#fff}
+.logo{font:italic 22px Georgia;display:inline-block}nav div{display:flex;gap:28px;font:12px monospace;letter-spacing:.18em;text-transform:uppercase}
+header{height:100vh;min-height:560px;position:relative;overflow:hidden;background:#0b0908;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:0 5vw 9vh}
+header canvas{position:absolute;inset:0;width:100%;height:100%}#pt{pointer-events:none}
+h1{position:relative;font:italic 400 clamp(56px,13vw,200px)/.95 Georgia,serif;letter-spacing:-.03em;pointer-events:none}
+h1 .ch{display:inline-block;transform:translateY(110%);opacity:0;animation:up 1s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes up{to{transform:none;opacity:1}}
+.tag{position:relative;font:12px monospace;letter-spacing:.3em;text-transform:uppercase;margin-top:22px;opacity:.85}
+.sc{position:absolute;right:5vw;bottom:9vh;font:11px monospace;letter-spacing:.3em;writing-mode:vertical-rl}
+.mq{overflow:hidden;white-space:nowrap;padding:26px 0;border-block:1px solid var(--ln)}
+.mq div{display:inline-block;font:italic clamp(34px,6vw,84px) Georgia;animation:mq 30s linear infinite}.mq b{color:var(--ac);margin:0 .6em;font-style:normal}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:14vh 5vw}
+.lab{font:12px monospace;letter-spacing:.3em;color:var(--ac);display:block;margin-bottom:14px}
+h2{font:italic 400 clamp(38px,6.5vw,96px)/1 Georgia,serif;letter-spacing:-.02em;margin-bottom:56px}
+.rv{opacity:0;transform:translateY(50px);transition:1s cubic-bezier(.2,.8,.2,1)}.rv.in{opacity:1;transform:none}
+.mas{columns:3 280px;column-gap:22px}
+.card{display:block;position:relative;overflow:hidden;margin-bottom:22px;break-inside:avoid;background:#111;transition:transform .25s,opacity 1s;border-radius:2px}
+.card canvas,.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1),filter .6s}
+.card img{opacity:0}.card.ok img{opacity:1}
+.card canvas{filter:saturate(.85)}.card:hover canvas,.card:hover img{transform:scale(1.07);filter:saturate(1.35) contrast(1.05)}
+.card:after{content:"";position:absolute;inset:12px;border:1px solid rgba(255,255,255,.0);transition:.5s;pointer-events:none}.card:hover:after{border-color:rgba(255,255,255,.7);inset:18px}
+.cap{position:absolute;left:24px;bottom:22px;z-index:2;color:#fff;opacity:0;transform:translateY(14px);transition:.5s;text-shadow:0 1px 12px rgba(0,0,0,.6)}.card:hover .cap{opacity:1;transform:none}
+.cap small{font:11px monospace;letter-spacing:.25em}.cap h3{font:italic 26px Georgia}
+.pl{position:relative;border-radius:4px;overflow:hidden;background:#000}.pl canvas{display:block;width:100%;aspect-ratio:16/9}
+.ct{display:flex;gap:16px;align-items:center;padding:14px 0;font:12px monospace}.ct input{flex:1;accent-color:var(--ac)}.ct button{font-size:18px;padding:6px 12px}
+.ov{position:absolute;left:22px;top:20px;font:11px monospace;letter-spacing:.2em;color:#fff;mix-blend-mode:difference}
+.ab{font:italic clamp(28px,4.4vw,60px)/1.25 Georgia,serif;max-width:1100px}.ab .w{opacity:.15;transition:opacity .3s}
+.cta{text-align:center}.cta .big{display:inline-block;font:italic clamp(40px,8vw,120px)/1 Georgia;border-bottom:2px solid var(--fg);transition:color .3s,border-color .3s;margin:10px 0 40px}.cta .big:hover{color:var(--ac);border-color:var(--ac)}
+.soc{display:flex;gap:30px;justify-content:center;font:12px monospace;letter-spacing:.25em;text-transform:uppercase}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:30px 5vw;color:var(--mut);font:12px monospace;border-top:1px solid var(--ln)}
+.lb{position:fixed;inset:0;z-index:150;background:rgba(8,6,5,.95);display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .4s;color:#fff}.lb.open{opacity:1;pointer-events:auto}
+.lbx{position:relative;width:min(1000px,90vw);height:76vh;display:grid;place-items:center}
+.lbx img,.lbx canvas{max-width:100%;max-height:100%;display:none;box-shadow:0 0 120px rgba(232,67,31,.25)}.lbx canvas{width:100%;aspect-ratio:8/5}
+.lbn{display:flex;gap:24px;align-items:center;margin-top:16px;font:12px monospace;letter-spacing:.2em}.lbn button{font-size:22px;padding:6px 14px}
+@media(max-width:700px){nav div a{display:none}.sc{display:none}}
+@media(prefers-reduced-motion:reduce){.mq div{animation:none}}
+</style></head><body>
+<div class="pre" id="pre"><i style="--c:#e8431f;--d:0s"></i><i style="--c:#1d4ed8;--d:.12s"></i><i style="--c:#0b0908;--d:.24s"></i><span>Atena Salehi</span></div>
+<div class="prog" id="prog"></div><div class="ring" id="ring"><b id="lb2"></b></div><div class="dot" id="dot"></div>
+<nav><a class="logo" href="#top">Atena</a><div><a href="#works">Works</a><a href="#motion">In Motion</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
+<header id="top"><canvas id="hc" width="960" height="540"></canvas><canvas id="pt"></canvas>
+<h1 id="h1">Atena Salehi</h1><p class="tag">Exploring the depths of my soul through color</p><span class="sc">SCROLL</span></header>
+<div class="mq"><div>Color<b>&#10022;</b>Soul<b>&#10022;</b>Emotion<b>&#10022;</b>Canvas<b>&#10022;</b>Light<b>&#10022;</b>Color<b>&#10022;</b>Soul<b>&#10022;</b>Emotion<b>&#10022;</b>Canvas<b>&#10022;</b>Light<b>&#10022;</b></div></div>
+<section id="works"><span class="lab rv">01 / SELECTED WORKS</span><h2 class="rv">Hover a painting<br>to watch it being made.</h2><div class="mas" id="mas"></div></section>
+<section id="motion"><span class="lab rv">02 / IN MOTION</span><h2 class="rv">A canvas, from blank<br>to finished.</h2>
+<div class="pl rv"><canvas id="pc" width="960" height="540" data-c="PLAY"></canvas><span class="ov" id="pov">00:00</span></div>
+<div class="ct"><button id="pb" data-c="">&#10074;&#10074;</button><input type="range" id="ps" min="0" max="30" step=".01" value="0"><span id="pt2">00:00</span></div></section>
+<section id="about"><span class="lab">03 / ABOUT</span><div class="ab" id="ab">I paint to feel. Every canvas begins with a single color and an honest emotion, and the rest is a conversation between the two. My work is an exploration of the depths of the soul through color.</div></section>
+<section class="cta" id="contact"><span class="lab">04 / CONTACT</span><a class="big" href="#" data-c="HELLO">Let's talk art</a><div class="soc"><a href="https://www.instagram.com/atenz_world/" target="_blank" rel="noopener" data-c="GO">Instagram</a><a href="https://www.facebook.com/atenagallery" target="_blank" rel="noopener" data-c="GO">Facebook</a></div></section>
+<footer><span>&copy; Atena Salehi</span><span>Draft concept by Square Code Digital</span></footer>
+<div class="lb" id="lb"><div class="lbx"><img id="li" alt=""><canvas id="lc" width="960" height="600"></canvas></div><div class="lbn"><button id="pv" data-c="PREV">&larr;</button><span id="lt"></span><button id="nx" data-c="NEXT">&rarr;</button><button id="x" data-c="CLOSE">&#10005;</button></div></div>
+<script>
+var $=function(s){return document.querySelector(s)},PI=Math.PI,mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my,NX=.5,NY=.5;
+function R(s){return function(){s|=0;s=s+0x6D2B79F5|0;var t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function mk(seed,H){var r=R(seed),a=[];for(var i=0;i<150;i++){var q=r()<.14;a.push({x:r()*1000,y:r()*1000,a:r()*6.28,l:120+r()*420,w:8+r()*46,h:(H+(q?180:(r()-.5)*80)+360)%360,c:(r()-.5)*1.6,s:i/150*24+r()*2,v:50+r()*20})}return a}
+function paint(c,w,h,t,A,H){c.fillStyle='hsl('+H+',35%,7%)';c.fillRect(0,0,w,h);c.lineCap='round';c.globalAlpha=.78;for(var i=0;i<A.length;i++){var s=A[i],p=Math.min(1,(t-s.s)/1.6);if(p<=0)continue;var n=Math.ceil(p*18),dx=Math.cos(s.a),dy=Math.sin(s.a);c.strokeStyle='hsl('+s.h+',80%,'+s.v+'%)';c.lineWidth=s.w*w/1000;c.beginPath();for(var k=0;k<=n;k++){var u=k/18,o=Math.sin(PI*u)*s.c*s.l*.35,x=(s.x+dx*s.l*u-dy*o)*w/1000,y=(s.y+dy*s.l*u+dx*o)*h/1000;k?c.lineTo(x,y):c.moveTo(x,y)}c.stroke()}c.globalAlpha=1}
+function tc(t){var s=Math.floor(t);return(s<600?'0':'')+Math.floor(s/60)+':'+(s%60<10?'0':'')+s%60}
+var U='https://atenasalehi.com/wp-content/uploads/2024/09/';
+var ART=[['1-4.jpg?w=760',12],['13-2.jpg?w=844',200],['11-1.jpg?w=1010',320],['17.jpg?w=825',45],['9-1-3.jpg?w=1017',160],['12-1.jpg?w=1005',270],['4-2.jpg?w=763',90],['6-2.jpg?w=918',350]],act=[],cards=[],AS=[.8,1.25,1,.75,1.1,.9,1.3,.85];
+ART.forEach(function(p,i){var a=document.createElement('a');a.className='card rv';a.href='#';a.dataset.c='VIEW';a.style.aspectRatio=AS[i];
+a.innerHTML='<canvas width=600 height='+Math.round(600/AS[i])+'></canvas><img alt="Artwork '+(i+1)+'" loading=lazy><div class=cap><small>No. 0'+(i+1)+'</small><h3>Untitled</h3></div>';
+var cv=a.firstChild,c=cv.getContext('2d'),im=a.querySelector('img'),A=mk(i*7+3,p[1]);a._A=A;a._H=p[1];a._t=30;a._src=U+p[0];
+a._d=function(){paint(c,cv.width,cv.height,a._t,A,p[1])};a._d();
+im.onload=function(){a.classList.add('ok');a._ok=1;a.style.aspectRatio=im.naturalWidth/im.naturalHeight};im.src=a._src;
+a.onmouseenter=function(){if(!a._ok){a._t=0;act.push(a)}};a.onmouseleave=function(){act=act.filter(function(x){return x!==a});a._t=30;a._d()};
+a.onclick=function(e){e.preventDefault();openLb(i)};$('#mas').appendChild(a);cards.push(a);
+a.onpointermove=function(e){var r=a.getBoundingClientRect();a.style.transform='perspective(900px) rotateY('+((e.clientX-r.left)/r.width-.5)*6+'deg) rotateX('+-((e.clientY-r.top)/r.height-.5)*6+'deg)'};a.onpointerleave=function(){a.style.transform=''}});
+var lb=$('#lb'),li=$('#li'),lcv=$('#lc'),lcx=lcv.getContext('2d'),cur=0,lbt=0,lbo=0;
+function openLb(i){cur=(i+cards.length)%cards.length;var a=cards[cur];lbt=0;lbo=1;lb.classList.add('open');$('#lt').textContent='No. 0'+(cur+1)+' / Untitled';
+if(a._ok){li.src=a._src;li.style.display='block';lcv.style.display='none'}else{li.style.display='none';lcv.style.display='block'}}
+$('#x').onclick=function(){lbo=0;lb.classList.remove('open')};$('#pv').onclick=function(){openLb(cur-1)};$('#nx').onclick=function(){openLb(cur+1)};
+lb.onclick=function(e){if(e.target===lb){lbo=0;lb.classList.remove('open')}};
+addEventListener('keydown',function(e){if(!lbo)return;if(e.key==='Escape'){lbo=0;lb.classList.remove('open')}if(e.key==='ArrowRight')openLb(cur+1);if(e.key==='ArrowLeft')openLb(cur-1)});
+var pc=$('#pc').getContext('2d'),PA=mk(99,330),pt=0,pp=1,ps=$('#ps');
+function ptog(){pp=!pp;$('#pb').innerHTML=pp?'&#10074;&#10074;':'&#9654;'}$('#pb').onclick=ptog;$('#pc').onclick=ptog;ps.oninput=function(){pt=+ps.value};
+var hc=$('#hc').getContext('2d'),hp=$('#pt'),hx=hp.getContext('2d'),ht=0,lx=null,ly=0,hero=$('#top');
+function rs(){hp.width=hero.clientWidth;hp.height=hero.clientHeight}rs();addEventListener('resize',rs);
+var ring=$('#ring'),lab=$('#lb2'),dot=$('#dot');
+document.querySelectorAll('nav a,.logo').forEach(function(a){a.dataset.c='GO'});
+addEventListener('pointermove',function(e){mx=e.clientX;my=e.clientY;NX=mx/innerWidth;NY=my/innerHeight;dot.style.transform='translate('+mx+'px,'+my+'px)';
+var r=hero.getBoundingClientRect();if(e.clientY<r.bottom&&e.clientY>r.top){var x=e.clientX-r.left,y=e.clientY-r.top;if(lx!==null){hx.strokeStyle='hsla('+(ht*60%360)+',90%,60%,.55)';hx.lineWidth=22;hx.lineCap='round';hx.beginPath();hx.moveTo(lx,ly);hx.lineTo(x,y);hx.stroke()}lx=x;ly=y}else lx=null});
+document.addEventListener('pointerover',function(e){var t=e.target.closest('[data-c]');ring.classList.toggle('on',!!t);lab.textContent=t?t.dataset.c:''});
+addEventListener('pointerdown',function(){ring.classList.add('dn')});addEventListener('pointerup',function(){ring.classList.remove('dn')});
+var last=performance.now();
+function tick(n){var dt=Math.min((n-last)/1000,.1);last=n;ht+=dt;
+rx+=(mx-rx)*.2;ry+=(my-ry)*.2;ring.style.transform='translate('+rx+'px,'+ry+'px)';
+if(scrollY<innerHeight*1.1){hc.fillStyle='#0b0908';hc.fillRect(0,0,960,540);hc.globalCompositeOperation='lighter';for(var i=0;i<6;i++){var x=960*(.5+.42*Math.sin(ht*.35+i*1.9)),y=540*(.5+.38*Math.cos(ht*.28+i*2.4));if(!i){x=960*NX;y=540*NY}var g=hc.createRadialGradient(x,y,0,x,y,330),H=(ht*14+i*60)%360;g.addColorStop(0,'hsla('+H+',100%,55%,.55)');g.addColorStop(1,'hsla('+H+',100%,50%,0)');hc.fillStyle=g;hc.fillRect(0,0,960,540)}hc.globalCompositeOperation='source-over';
+hx.globalCompositeOperation='destination-out';hx.fillStyle='rgba(0,0,0,.025)';hx.fillRect(0,0,hp.width,hp.height);hx.globalCompositeOperation='source-over'}
+act.forEach(function(a){a._t=Math.min(30,a._t+dt*3.5);a._d()});
+var r=$('#pc').getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight){if(pp){pt=(pt+dt)%34;ps.value=Math.min(pt,30)}paint(pc,960,540,pt,PA,330);$('#pov').textContent=tc(Math.min(pt,30));$('#pt2').textContent=tc(Math.min(pt,30))}
+if(lbo&&lcv.style.display==='block'){lbt=(lbt+dt*1.2)%34;paint(lcx,960,600,lbt,cards[cur]._A,cards[cur]._H)}
+requestAnimationFrame(tick)}requestAnimationFrame(tick);
+var ab=$('#ab'),ws=[];ab.innerHTML=ab.textContent.split(' ').map(function(w){return'<span class=w>'+w+'</span>'}).join(' ');ws=ab.querySelectorAll('.w');
+addEventListener('scroll',function(){var h=document.documentElement;$('#prog').style.width=scrollY/(h.scrollHeight-innerHeight)*100+'%';var r=ab.getBoundingClientRect(),p=Math.max(0,Math.min(1,(innerHeight*.85-r.top)/(r.height+innerHeight*.3)));ws.forEach(function(w,i){w.style.opacity=Math.max(.15,Math.min(1,p*ws.length*1.1-i))})});
+var t0=$('#h1'),txt='Atena Salehi';t0.innerHTML=txt.split('').map(function(c,i){return'<span class=ch style="animation-delay:'+(1.3+i*.06)+'s">'+(c===' '?'&nbsp;':c)+'</span>'}).join('');
+setTimeout(function(){$('#pre').classList.add('go')},900);
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.rv').forEach(function(e,i){e.style.transitionDelay=(i%3)*90+'ms';io.observe(e)});
+</script></body></html>
